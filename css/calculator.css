@@ -1,0 +1,101 @@
+#calculator {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    width: 350px;
+    height: 550px;
+    background: radial-gradient(circle, #2f2f2f 0%, #000 100%);
+    box-shadow: 3px 4px 10px 5px rgba(0, 0, 0, 0.6);
+    border-radius: 25px;
+    border: 1px solid #000;
+}
+
+#calculator-display {
+    margin: 15px;
+    width: 90%;
+    height: 85px;
+    justify-self: center;
+    background: radial-gradient(circle, #fff 0%, #a0a0a0 100%);
+    border-radius: 15px;
+    border: 3px solid #000;
+}
+
+#display-string {
+    display: grid;
+    container-type: size;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 3%;
+    width: 100%;
+    height: 100%;
+
+    justify-items: right;
+    align-items: center;
+
+    font-size: 100%;
+}
+
+#display-string span {
+    font-size: 100cqh;
+    line-height: 1;
+}
+
+/* Клавиатура и кнопки */
+#calculator-keyboard {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    margin: 15px;
+    margin-top: 0;
+    gap: 5px;
+}
+
+.calculator-button {
+    border: none;
+    border-radius: 35px;
+    background-color: #4A4A4A;
+    color: #F5F5F5;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.calculator-button:hover { background-color: #5A5A5A; }
+.calculator-button:active { transform: scale(0.95); }
+
+/* Специальные стили кнопок */
+#menu {
+    display: grid;
+}
+
+#reset {
+    justify-self: right;
+    width: 76px;
+    border-radius: 15px;
+    background-color: #E06C75;
+    color: #2F2F2F;
+    font-weight: 450;
+}
+#reset:hover { background-color: #E5838B; }
+
+#keyboard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+.calculator-button-operator {
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    color: #2F2F2F;
+}
+.calculator-button-operator:hover { background-color: #E5E5E5; }
+
+#point { background-color: #546E7A; }
+#point:hover { background-color: #607D8B; }
+
+#equals {
+    border-radius: 15px;
+    background-color: #FF9F0A;
+    color: #2F2F2F;
+}
+#equals:hover { background-color: #FFB340; }

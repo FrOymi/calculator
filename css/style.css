@@ -1,0 +1,60 @@
+/* Глобальные стили и Фон */
+body {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    font-family: "Roboro Condensed", sans-serif;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("../img/background-image.jpg") center/cover fixed;
+    filter: blur(7px);
+    transform: scale(1.1);
+    z-index: -1;
+}
+
+/* Шапка (Header) */
+header {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    height: 100px;
+    background: linear-gradient(90deg, #b3dcfd 0%, #fff 50%, #b3dcfd);
+    opacity: 0.9;
+    position: relative;
+    align-items: center;
+}
+
+#page-name {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    pointer-events: none;
+    font-family: "Unbounded", sans-serif;
+    font-weight: 200;
+    font-size: 80px;
+    opacity: 0.5;
+    color: #000;
+    margin: 0;
+}
+
+#logo {
+    justify-self: center;
+    z-index: 1;
+}
+
+/* Основная часть */
+main {
+    display: grid;
+    place-items: center;
+}
+
+/* до 768px */
+@media (max-width: 768px) {
+
+}

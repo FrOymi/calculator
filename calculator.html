@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+
+    <link href="img/favicon.ico" rel="icon" type="image/png">
+
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/calculator.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <header>
+      <a id="logo" href="#"><img src="img/logo.png" width="80px" alt="logo"></a>
+      <h1 id="page-name">CALCULATOR</h1>
+  </header>
+    <main>
+        <article id="calculator">
+            <section id="calculator-display">
+                <div id="display-string"><span></span></div>
+            </section>
+            <section id="calculator-keyboard">
+                <div id="menu">
+                    <button id="reset" class="calculator-button" onclick="clearDisplay()">AC</button>
+                </div>
+                <div id="keyboard">
+                    <button class="calculator-button" onclick="printNumber(7)">7</button>
+                    <button class="calculator-button" onclick="printNumber(8)">8</button>
+                    <button class="calculator-button" onclick="printNumber(9)">9</button>
+                    <button class="calculator-button-operator calculator-button" onclick="chooseOperation('/')">/</button>
+                    <button class="calculator-button" onclick="printNumber(4)">4</button>
+                    <button class="calculator-button" onclick="printNumber(5)">5</button>
+                    <button class="calculator-button" onclick="printNumber(6)">6</button>
+                    <button class="calculator-button-operator calculator-button" onclick="chooseOperation('*')">*</button>
+                    <button class="calculator-button" onclick="printNumber(1)">1</button>
+                    <button class="calculator-button" onclick="printNumber(2)">2</button>
+                    <button class="calculator-button" onclick="printNumber(3)">3</button>
+                    <button class="calculator-button-operator calculator-button" onclick="chooseOperation('-')">-</button>
+                    <button class="calculator-button" onclick="printNumber(0)">0</button>
+                    <button id="point" class="calculator-button">.</button>
+                    <button id="equals" class="calculator-button" onclick="printResult()">=</button>
+                    <button class="calculator-button-operator calculator-button" onclick="chooseOperation('+')">+</button>
+                </div>
+            </section>
+        </article>
+    </main>
+<script src="js/claculator.js"></script>
+</body>
+</html>
