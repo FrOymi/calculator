@@ -56,5 +56,13 @@ main {
 
 /* до 768px */
 @media (max-width: 768px) {
+    header {
+        background: linear-gradient(90deg, #fff 0%, #b3dcfd 50%, #fff);
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
 
+    #page-name {
+        display: none;
+    }
 }
