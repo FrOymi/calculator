@@ -51,6 +51,9 @@ function calculate() {
 
 function printResult() {
     calculate();
+    if (result.toString().length > 8) {
+        result = result.toExponential(2);
+    }
     span.textContent = result;
     calculateCompleted = true;
     dataReboot();
