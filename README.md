@@ -22,7 +22,7 @@ A web application for performing basic arithmetic operations directly in your br
 
 ### Live Demo
 You can access the calculator immediately here: 
-👉 [**https://froymi.github.io/calculator/calculator.html**](https://froymi.github.io/calculator/calculator.html)
+👉 [**https://froymi.github.io/web-calculator/calculator.html**](https://froymi.github.io/web-calculator/calculator.html)
 
 ### Local Setup
 1.  **Clone the repository:**
